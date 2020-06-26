@@ -11,8 +11,8 @@ export default class Clock extends Component {
 
     render() {
         return (
-            <div className=''>
-                
+            <div className='clock'>
+                <button type="btn">Clock</button>
             </div>
         )
     }

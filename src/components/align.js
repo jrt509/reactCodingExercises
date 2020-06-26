@@ -5,22 +5,26 @@ export default class Align extends Component {
         super(props)
 
         this.state = {
-        //    leftBtn: "align-items-left",
-        //    centerBtn: "align-items-center",
-        //    rightBtn: "align-itmes-right" 
-        }
-    }
+            text:"left"
+              
 
+        }
+        this.changeText = this.changeText.bind(this)
+    }
+    changeText(newText) {
+        this.setState({
+           text: newText 
+        })
+    }
+    
     render() {
         return (
-            <div className="align">
-                <div className="align-text">
-                    Align Me!
-                </div>
+            <div className="align-wrapper">
+                <h3 style={{ textAlign: this.state.text}}>Align Me!</h3>
                 <div className="btn">
-                    <button>Left</button>
-                    <button>Center</button>
-                    <button>Right</button>
+                    <button onClick={() => this.changeText("left")}>Left</button>
+                    <button onClick={() => this.changeText("center")}>Center</button>
+                    <button onClick={() => this.changeText("right")}>Right</button>
                 </div>
             </div>
         )

@@ -4,18 +4,11 @@
     height: 100vh;
     width: 100vw;
 }
-.align  {
-    width: 100%;
-    
-    .align-text {
+.btn {
         text-align: center;
-
-    }
-    .btn {
-        text-align: center;
-    }
-    
 }
+    
+
 
 .toggle {
     border: 1px solid black;
@@ -31,4 +24,19 @@
      border: 1px solid black;
      width: 100%;
      text-align: center;
+}
+.pixelCounter {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+.colorChanger {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+.clock {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
 }

@@ -11,8 +11,11 @@ export default class IncreaseDecrease extends Component {
 
     render() {
         return (
-            <div className=''>
-                
+            <div className="pixelCounter">
+                <input type="text"></input>
+                <button type="btn">Bigger</button>
+                <button type="btn">Smaller</button>
+
             </div>
         )
     }

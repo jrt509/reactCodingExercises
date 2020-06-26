@@ -11,8 +11,10 @@ export default class Color extends Component {
 
     render() {
         return (
-            <div className=''>
-                
+            <div className="colorChanger">
+                <button type="btn">Color me</button>
+                <button type="btn">Change text</button>
+                <button type="btn">Submit</button>
             </div>
         )
     }
