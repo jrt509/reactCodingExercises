@@ -1,0 +1,34 @@
+.app {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+.align  {
+    width: 100%;
+    
+    .align-text {
+        text-align: center;
+
+    }
+    .btn {
+        text-align: center;
+    }
+    
+}
+
+.toggle {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+.up-down-count {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+.numberCounter {
+     border: 1px solid black;
+     width: 100%;
+     text-align: center;
+}
