@@ -1,18 +1,27 @@
 import React, { Component } from 'react'
 
 export default class Clock extends Component {
+    
     constructor(props) {
         super(props)
-
-        this.state = {
-            
+            this.state = {
+                time: new Date()
         }
     }
-
+    currentTime() {
+        this.setState({
+            time: new Date()
+        })
+    }
+    componentWillMount() {
+        setInterval(() => this.currentTime(),500)
+    }
+   
     render() {
         return (
             <div className='clock'>
-                <button type="btn">Clock</button>
+                <h1>{this.state.time.toLocaleTimeString()}</h1>
+                
             </div>
         )
     }
