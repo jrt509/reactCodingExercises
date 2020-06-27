@@ -19,6 +19,7 @@ export default class IncreaseDecrease extends Component {
             number: this.state.number + 1
         })
     }
+    
     pixelDecrementer() {
         this.setState({
             number: this.state.number - 1

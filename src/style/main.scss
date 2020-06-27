@@ -3,40 +3,62 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 100vh;
     width: 100vw;
+    font-size: 1.5em;
+    font-weight: 200;
 }
-.btn {
+.align-wrapper {
+    background-color: blue;
+    h3 {
+        color: white
+        ;
+    }
+    .btn {
         text-align: center;
+        padding-bottom: 50px;
+    }
 }
-    
-
-
 .toggle {
     border: 1px solid black;
     width: 100%;
     text-align: center;
-}
-.up-down-count {
+    background-color: coral;
+}   
+// .up-down-count {
+//     border: 1px solid black;
+//     width: 100%;
+//     text-align: center;
+//     background-color: blue;
+
+
+// }
+.numberCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     border: 1px solid black;
     width: 100%;
     text-align: center;
+    background-color: blue;
+
 }
-.numberCounter {
-     border: 1px solid black;
-     width: 100%;
-     text-align: center;
-}
+
+
 .pixelCounter {
     border: 1px solid black;
     width: 100%;
     text-align: center;
+    background-color: coral;
 }
 .colorChanger {
     border: 1px solid black;
     width: 100%;
     text-align: center;
+    background-color: blue;
 }
 .clock {
     border: 1px solid black;
     width: 100%;
     text-align: center;
+    background-color: coral;
 }
