@@ -13,8 +13,8 @@ export default class Clock extends Component {
             time: new Date()
         })
     }
-    componentWillMount() {
-        setInterval(() => this.currentTime(),500)
+    componentDidMount() {
+        setInterval(() => this.currentTime(),1000)
     }
    
     render() {
