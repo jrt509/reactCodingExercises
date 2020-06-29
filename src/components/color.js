@@ -6,9 +6,9 @@ export default class Color extends Component {
 
         this.state = {
             text: "Color Me",
-            color: "blue",
+            color: "black",
             textChange: "Color Me",
-            colorChange: "blue"
+            colorChange: "black"
         }
         this.handleButtonClick =this.handleButtonClick.bind(this);
         this.handleTextChange = this.handleTextChange.bind(this);
@@ -37,8 +37,8 @@ export default class Color extends Component {
                 <div style={{color: this.state.colorChange}}>
                 {this.state.textChange}
                 </div>
-                <input type="text" onChange={this.handleColorChange} placeholder={this.state.color}></input>
-                <input type="text" onChange={this.handleTextChange} placeholder={this.state.text}></input>
+                <input type="text" onChange={this.handleColorChange} value={this.state.color}></input>
+                <input type="text" onChange={this.handleTextChange} value={this.state.text}></input>
                 <button type="button" onClick={this.handleButtonClick}>Submit</button>
             </div>
         )

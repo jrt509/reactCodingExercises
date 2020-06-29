@@ -26,9 +26,9 @@ export default class UpDown extends Component {
     render() {
         return (
             <div className="numberCounter">
-                <button className="increase" onClick={() => this.increaseNumber()}>Up</button>
+                <button className="increase" onClick={this.increaseNumber}>Up</button>
                 {this.state.counter}
-                <button className="decrease" onClick={() => this.decreaseNumber()}>Down</button>
+                <button className="decrease" onClick={this.decreaseNumber}>Down</button>
             </div>
         )
     }

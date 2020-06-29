@@ -6,12 +6,18 @@ export default class IncreaseDecrease extends Component {
 
         this.state = {
             number: 20,
-            counter: 0,
+            inputNumber: 1
         
         }
         this.pixelIncrementer = this.pixelIncrementer.bind(this);
         this.pixelDecrementer = this.pixelDecrementer.bind(this);
+        this.inputChanger = this.inputChanger.bind(this);
        
+    }
+    inputChanger(e) {
+        this.setState({
+            inputNumber: parseInt(e.target.value)
+        })
     }
     pixelIncrementer() {
         this.setState({
@@ -32,6 +38,7 @@ export default class IncreaseDecrease extends Component {
             <div className="pixelCounter" style={{ fontSize: this.state.number }}>
                {this.state.number}px
                <div>
+                <input type="text" value={this.state.inputNumber} onChange={() => this.inputChanger(e)}></input>
                 <button onClick={this.pixelIncrementer}>Bigger</button>
                 <button onClick={this.pixelDecrementer}>Smaller</button>
                 </div>
